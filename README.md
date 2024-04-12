@@ -10,27 +10,24 @@ You will need the following things properly installed on your computer.
 </ul>
 
 ## Installation
-```bash
-git clone https://github.com/serdaryld/UniClub
-```
-```bash
-./server npm install
-```
-```bash
-./client npm install
-```
+<ul>
+<li><code>git clone https://github.com/serdaryld/UniClub</code></li>
+<li><code>cd UniClub</code></li>
+<li><code>./server npm install</code></li>
+<li><code>./client npm install</code></li>
+</ul>
 
 ## Database Configuration
-<ul></ul>
+<ul>
 <li>Ensure MySQL is up and running with a root user.</li>
 <li>Update database name and password in server/connect.js file.</li>
 </ul>
 
 ## Running
 To run this project:
-```bash
-./server node index.js
-```
-```bash
-./client npm start
-```
+
+<ul>
+<li><code>./server node index.js</code></li>
+<li><code>./client npm start</code></li>
+</ul>
+
