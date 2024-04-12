@@ -1,0 +1,58 @@
+@import "../../style.scss";
+
+.create{
+  @include themify($themes) {
+    padding: 20px 70px;
+    background-color: themed("bgSoft");
+    min-height: 100vh;
+    
+
+    .file-container {
+        position: relative;
+        margin-bottom: 40px;
+        margin-top: 20px;
+      }
+      
+      .file {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      
+      .input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      input {
+        padding: 10px 0;
+        font-size: 16px;
+        color: gray;
+        width: 40%;
+      }
+
+      .text-field{
+        color: themed("textColor")!important;
+      }
+      
+      button {
+        border: none;
+        background-color: #5271ff;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 50px;
+        transition: 0.3s;
+    
+        &:hover{
+          background-color: #365bff;
+        }
+      }
+  }
+ }
+  
+  
+  

@@ -1,0 +1,66 @@
+@import "../../style.scss";
+
+.user-list {
+  @include themify($themes) {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 25%;
+    height: 40%;
+    background-color: themed("bg");
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 999;
+    overflow-y: auto;
+  
+    .header {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      span {
+        color: themed("textColor");
+        font-weight: bold;
+      }
+
+      .close-icon{
+        color: themed("textColor");
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+          color: rgb(189, 0, 0);
+        }
+      }
+  
+    }
+  
+    .user-list-content {
+      padding: 8px;
+  
+      .user-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        gap: 5px;
+  
+        img {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          margin-right: 8px;
+        }
+  
+        span {
+
+          font-size: 15px;
+          color: themed("textColor");
+        }
+      }
+    }
+  }
+}

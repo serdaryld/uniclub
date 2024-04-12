@@ -1,0 +1,131 @@
+@import "../../style.scss";
+
+.profile {
+  @include themify($themes) {
+    background-color: themed("bgSoft");
+    padding: 0 70px;
+
+    .upper-profile {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+  
+      
+    
+      .profile-pic {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        left: 5%;
+        top: 50%; 
+        transform: translateY(-50%);
+        
+      }
+
+      .settings{
+        cursor: pointer;
+        position: absolute;
+        right: 30%; 
+        top: 50%; 
+  
+        .settings-icon{
+          border: none;
+          font-size: 35px;
+          color: themed("textColor");
+          cursor: pointer;
+          position: absolute;
+          right: 30%; 
+          top: 50%; 
+          transform: translateY(-50%);
+          transition:  0.5s ease-in-out;
+          &:hover{
+            transform: translateY(-50%) rotate(45deg);
+            color: themed("textColorSoft");
+          }
+        }
+        .settings-menu{
+          background-color: themed("bg") !important;
+          color: themed("textColor") !important;
+          position: absolute;
+          top: 10px;
+        }
+      }
+    
+      button {
+        border: none;
+        background-color: #5271ff;
+        color: white;
+        padding: 15px 35px;
+        border-radius: 5px;
+        cursor: pointer;
+        position: absolute;
+        right: 20%; 
+        top: 50%; 
+        transform: translateY(-50%);
+        transition: 0.3s;
+
+        &:hover{
+          background-color: #365bff;
+        }
+      }
+      
+      .button-enrolled {
+        background-color: gray; 
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        transition: 0.3s;
+
+        &:hover{
+          background-color: rgb(140, 140, 140);
+        }
+      }
+    }
+    
+    
+
+  
+      .c-info {
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        background-color: themed("bgSoft");
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 5%;
+        padding-bottom: 70px;
+        
+
+          span {
+            font-size: 30px;
+            font-weight: 500;
+            color: themed("textColor");
+          }
+          p{
+            color: themed("textColor");
+          }
+          .club-count{
+            margin-top: 10px;
+            width: 140px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: themed("textColor");
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover{
+              color: themed("logo");
+            }
+          }
+
+      }
+    
+
+    
+  }
+}
+
+

@@ -1,0 +1,83 @@
+@import "../../style.scss";
+
+.notifications{
+  @include themify($themes) {
+    padding: 20px 75px;
+    background-color: themed("bgSoft");
+    min-height: 100vh;
+
+    .title{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      color: themed("textColor");
+    }
+    h4{
+      margin-bottom: 20px;
+      color: themed("textColor");
+    }
+    
+    .item{
+        background-color: themed("bg");
+        padding: 5px 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.3);
+    
+
+    .club {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 20px 0px;
+
+          .club-info {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+
+            p {
+              color: themed("textColorSoft");
+            }
+
+            span {
+              font-weight: 500;
+              color: themed("textColor");
+            }
+          }
+
+        }
+        button{
+            background-color: #23af41;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            &:hover{
+                background-color: #2bcd4e;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+              }
+          }
+          .approved{
+            color: themed("textColorSoft");
+          }
+
+        
+    }
+  }
+ }

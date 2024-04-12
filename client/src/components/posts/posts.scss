@@ -1,0 +1,41 @@
+@import "../../style.scss";
+
+.posts{
+  @include themify($themes) {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-bottom: 50px;
+
+
+
+  .filter-buttons {
+    display: flex;
+    margin-top: 20px;
+
+
+    .filter-button {
+      padding: 10px 25px;
+      margin-right: 10px;
+      cursor: pointer;
+      color: themed("textColorSoft");
+      border: 2px solid rgb(210, 210, 210);
+      background-color: transparent;
+      border-radius: 0.5rem;
+      transition: 0.2s;
+      &:hover{
+        border: 2px solid rgb(190, 190, 210);
+      }
+    }
+
+
+
+    .filter-button.active {
+      color: #2847d2;
+      border: 2px solid #5271ff;
+    }
+
+  }
+
+ }
+}
