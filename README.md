@@ -1,5 +1,5 @@
 # UniClub
-Uniclub is a platform designed for the management and communication of student clubs. Club administrators can make announcements or create events. People who are members of the site can request to become a member of these clubs, comment on posts, like them and participate in events.
+UniClub is a platform designed for the management and communication of student clubs. Club administrators can make announcements or create events. People who are members of the site can request to become a member of these clubs, comment on posts, like them and participate in events.
 
 ## Prerequisites
 You will need the following things properly installed on your computer.
@@ -11,8 +11,8 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 <ul>
-<li><code>git clone https://github.com/serdaryld/UniClub</code></li>
-<li><code>cd UniClub</code></li>
+<li><code>git clone https://github.com/serdaryld/uniclub</code></li>
+<li><code>cd uniclub</code></li>
 <li><code>./server npm install</code></li>
 <li><code>./client npm install</code></li>
 </ul>
